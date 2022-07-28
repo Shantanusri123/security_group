@@ -1,8 +1,8 @@
 resource "aws_security_group" "sg"{
   name = var.name
   ingress{
-    from_port = var.from_port
-    to_port = var.to_port
+    from_port = var.port
+    to_port = var.port
     protocol = "tcp"
     cidr_blocks = ["0.0.0.0/0"]
   }
