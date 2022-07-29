@@ -4,6 +4,7 @@ terraform {
     key            = var.environment_key
     region         = var.aws_region
   }
+}
 
 resource "aws_security_group" "sg"{
   name = var.name
