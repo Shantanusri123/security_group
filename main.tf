@@ -1,8 +1,6 @@
 terraform {
   backend "s3" {
     bucket         = "terraform-state-for-us"
-    key            = var.environment_key
-    region         = var.aws_region
   }
 }
 
