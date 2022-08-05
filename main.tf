@@ -1,6 +1,8 @@
 terraform {
   backend "s3" {
-    bucket         = var.env_bucket
+    bucket = var.env_bucket
+    key =  var.key
+    region = var.aws_region
   }
 }
 
@@ -11,7 +13,7 @@ resource "aws_security_group" "sg"{
     to_port = var.port
     protocol = "tcp"
     cidr_blocks = ["0.0.0.0/0"]
-  }
+  } 
   egress{
     from_port = 0
     to_port = 0
