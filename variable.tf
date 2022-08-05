@@ -9,3 +9,6 @@ variable "port"{
 variable "env_bucket"{
 type = string
 }
+variable "key"{
+  type = string
+}
