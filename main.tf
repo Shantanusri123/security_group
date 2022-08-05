@@ -1,6 +1,6 @@
 terraform {
   backend "s3" {
-    bucket         = "terraform-state-for-us-again-gain"
+    bucket         = var.env_bucket
   }
 }
 
